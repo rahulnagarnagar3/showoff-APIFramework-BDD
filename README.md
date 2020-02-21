@@ -36,6 +36,7 @@ Description of Endpoints
 
 1.	POST : {BaseURL}/oauth/token
 This endpoint is used to generate the token for the User by using user name, password , client id and secret key 
+
  Token Payload 
 {
     "grant_type": "password",
@@ -47,6 +48,7 @@ This endpoint is used to generate the token for the User by using user name, pas
 
 2.	POST: {BaseURL}/oauth/revoke
 This endpoint is used to reveal the token by passing the generated token id from the above endpoint
+
  Revoke Payload
 {
 	"token":"42eaddaa5ce0d26bf2f29002fe87d64268188f5d86070901d9a7897478b91a0d"
@@ -69,7 +71,8 @@ Create User Payload
 }
 
 4.	GET: {BaseURL}/api/v1/users/email?email=test@showoff.ie&client_id=277ef29692f9a70d511415dc60592daf4cf2c6f6552d3e1b769924b2f2e2e6fe&client_secret=d6106f26e8ff5b749a606a1fba557f44eb3dca8f48596847770beb9b643ea352
-                This endpoint is used to reveal the user by registered email  
+
+This endpoint is used to reveal the user by registered email  
 
 5.	POST: {BaseURL}/api/v1/users/reset_password
 This endpoint used to reset the password of the registered user only
@@ -95,9 +98,6 @@ GET/ api/v1/users/email           Get user by email
 POST/ api/v1/users/reset_password	 Reset Password for registered user
 
 For Testing purpose mostly happy paths followed.
-
-
-
 
 Cucumber can be integrated with Selenium using following 3 steps
 
